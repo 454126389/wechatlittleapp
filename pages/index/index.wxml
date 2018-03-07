@@ -1,0 +1,31 @@
+
+
+<view class='customSwiper'>
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="300">    
+      <block wx:for="{{sliderList}}" wx:for-index="index">    
+        <swiper-item>    
+          <image src="{{item.imageSource}}" style='width:100%;height:100%;' class="slide-image" mode="aspectFill"/>    
+        </swiper-item>    
+      </block>    
+    </swiper>   
+</view>
+
+<view class="index">
+  <view class="hotcity-common" style="display:inline;">当前位置: </view>
+   <view class="thisCityName">{{location}}{{county}}</view> 
+  <view class="thisCityName" bindtap="jump">
+    <icon type="download" size="20" color='#2a579a' class='changeCity'/>
+    <text>更改定位</text>  
+  </view>
+  </view>
+
+
+    <view class="weatherwrap" bindtap='gotoWeather'>
+    <!--显示当天的天气信息-->
+    <view class="info">
+      <!--城市名称 当前日期-->
+      <view class="city">{{location}} ({{today}})</view>
+           <!--当天温度-->
+      <view class="temp">{{weatherData.tmp}}℃</view>
+    </view>
+    </view>

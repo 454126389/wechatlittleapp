@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat1",
+    "navigationBarTextStyle":"black"
+  },
+    "tabBar": {
+      "position": "top",
+      "backgroundColor": "#2a579a",
+      "color": "#DCEDC8",
+      "selectedColor": "#DCEDC8",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页"
+        },
+        {
+          "pagePath": "pages/logs/logs",
+          "text": "周边"
+        },
+        {
+          "pagePath": "pages/logs/logs",
+          "text": "电影"
+        },
+        {
+          "pagePath": "pages/logs/logs",
+          "text": "新闻"
+        },
+        {
+          "pagePath": "pages/logs/logs",
+          "text": "更多"
+        }
+      ]
+    }
+}
